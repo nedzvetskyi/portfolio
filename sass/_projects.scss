@@ -1,0 +1,28 @@
+.projects {
+    width: 90%;
+    margin: auto;
+    min-height: 90vh;
+    @include flex(space-around, center, row);
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 0 2rem;
+    h2 {
+        text-align: center;
+        margin: 3rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.technologies {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 4rem;
+}

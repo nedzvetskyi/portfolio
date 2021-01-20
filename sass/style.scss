@@ -1,0 +1,118 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
+@import "projects";
+@import "contact";
+
+@media screen and (max-width: 1450px) {
+    html {
+        font-size: 53%;
+    }
+
+    .splash {
+        display: none;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .intro-text {
+        flex: 1 1 40rem;
+    }
+
+    .intro-images {
+        flex: 1 1 60rem;
+    }
+
+    svg {
+        width: 80%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .intro-social a {
+        margin: 2rem;
+    }
+
+    .main-head {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .project img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    nav {
+        .logo {
+            margin-top: 3rem;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        ul {
+            margin: 2rem 0;
+            flex: 1 1 100rem;
+        }
+    }
+
+    .project {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    footer {
+        padding: 3rem 5%;
+        h4 {
+            text-align: center;
+            order: 2;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .intro {
+        h2 {
+            font-size: 6rem;
+        }
+
+        h3 {
+            font-size: 4rem;
+        }
+    }
+
+    .form-section form {
+        width: 100%;
+        padding: 3rem 5rem;
+    }
+}

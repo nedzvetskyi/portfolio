@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+h1 {
+    font-size: $header1;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+    font-size: $text;
+}
+
+h2 {
+    font-size: $header2;
+}
+
+h3 {
+    font-size: $header3;
+}
+
+h4,
+h5 {
+    font-size: $header4;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-head {
+    width: 95%;
+    margin: 0 0 0 auto;
+    min-height: 10vh;
+}
+
+nav {
+    width: 60%;
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+
+    ul {
+        @include flex(space-between, center, row);
+        flex: 1 1 40rem;
+    }
+
+    .logo {
+        @include flex(flex-start, center, row);
+        flex: 1 1 10rem;
+
+        h1 {
+            margin: 2rem;
+        }
+    }
+}
+
+.active {
+    padding: 1rem 3rem;
+    background: $gray-text;
+    border-radius: 2rem;
+    color: #ffffff;
+}
+
+footer {
+    width: 100%;
+    padding: 0 5%;
+    min-height: 10vh;
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+    background: $background-color;
+    color: white;
+    h4 {
+        flex: 1 1 40rem;
+    }
+    ul {
+        @include flex(space-between, center, row);
+        flex: 1 1 40rem;
+    }
+}
