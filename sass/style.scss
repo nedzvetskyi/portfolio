@@ -17,6 +17,7 @@ $gray-text: #2c2c2c;
 @import "global";
 @import "intro";
 @import "projects";
+@import "tabs";
 @import "contact";
 
 @media screen and (max-width: 1450px) {
@@ -100,7 +101,7 @@ $gray-text: #2c2c2c;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .intro {
         h2 {
             font-size: 6rem;
@@ -114,5 +115,20 @@ $gray-text: #2c2c2c;
     .form-section form {
         width: 100%;
         padding: 3rem 5rem;
+    }
+    .projects {
+        padding: 0;
+    }
+    .project__link:hover {
+        transform: unset;
+        .project__img {
+            box-shadow: none;
+        }
+    }
+    .project__img {
+        box-shadow: none;
+    }
+    label {
+        font-size: 1.8rem;
     }
 }
